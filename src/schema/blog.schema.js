@@ -6,7 +6,7 @@ const blogSchema = new mongoose.Schema(
     content: { type: String, required: true },
     author: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "vishals1",
+      ref: "vishals",
     },
   },
   {
@@ -14,6 +14,6 @@ const blogSchema = new mongoose.Schema(
   }
 );
 
-const Blog = mongoose.model("blogs1", blogSchema);
+const Blog = mongoose.model("blogs", blogSchema);
 
 module.exports = Blog;

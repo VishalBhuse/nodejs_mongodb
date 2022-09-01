@@ -7,7 +7,8 @@ const userSchema = new mongoose.Schema({
   age: {type:Number, min:20, max:100},
   blogs:[{
     type: mongoose.Schema.Types.ObjectId,
-    ref: "blogs1",
+    ref: "blogs",
+    
   }]
 },
 {
@@ -15,6 +16,6 @@ versionKey: false,
 }
 );
 
-const User = mongoose.model("vishals1", userSchema);
+const User = mongoose.model("vishals", userSchema);
 
 module.exports = User;
